@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Luis' Portfolio
+Welcome to Luis' Portfolio, a professional website showcasing my skills, certifications, and career highlights. This responsive and interactive portfolio is designed to create opportunities for professional networking and job applications.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Responsive Design: Fully optimized for desktop, tablet, and mobile views.
+Interactive Sections:
+About Me
+Skills and Expertise
+Certifications
+Testimonials
+Contact Me
+Downloadable Resume: Visitors can view and download my resume.
+Dark Mode: Toggle between light and dark themes for a personalized experience.
+Technologies Used
+Frontend:
 
-## Available Scripts
+React.js
+React Router
+Tailwind CSS
+Framer Motion (for animations)
+Hosting:
 
-In the project directory, you can run:
+Vercel
+Setup Instructions
+Clone the Repository:
 
-### `npm start`
+bash
+Copy code
+git clone https://github.com/lowesitoo/alm-portfolio.git
+cd alm-portfolio
+Install Dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+Run the Development Server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm start
+Build for Production:
 
-### `npm test`
+bash
+Copy code
+npm run build
+Deployment
+Build the Application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm run build
+Deploy to Vercel:
 
-### `npm run build`
+Push your code to GitHub.
+Log in to Vercel.
+Create a new project and link your GitHub repository.
+Set the Build Command to npm run build and Output Directory to build.
+Click Deploy.
+How to Contribute
+Contributions are welcome! Follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fork this repository.
+Create a new branch:
+bash
+Copy code
+git checkout -b feature-name
+Make your changes and commit:
+bash
+Copy code
+git commit -m "Add your message here"
+Push to the branch:
+bash
+Copy code
+git push origin feature-name
+Open a pull request on GitHub.
+Contact
+Feel free to reach out for opportunities or questions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Email: your-email@example.com
+LinkedIn: linkedin.com/in/your-profile
+Website: Portfolio Website
+Screenshots
+Add screenshots of your site to showcase the features.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Acknowledgements
+Special thanks to:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React.js
+Tailwind CSS
+Framer Motion
+License
+This project is licensed under the MIT License.

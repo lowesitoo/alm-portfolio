@@ -1,0 +1,42 @@
+.timeline {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .timeline-item p {
+    font-size: 1em;
+    color: #777;
+  }
+  
+  .timeline-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .timeline-item ul li {
+    font-size: 0.95em;
+    margin: 5px 0;
+    color: #555;
+  }
+  
