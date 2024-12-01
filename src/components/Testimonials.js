@@ -23,7 +23,8 @@ const Testimonials = () => {
       className="py-20 bg-gradient-to-br from-black via-gray-900 to-purple-900 text-white dark:from-gray-100 dark:via-gray-200 dark:to-gray-300 dark:text-black"
     >
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-400 mb-8">
+        {/* Adjusted font size for "Testimonials" heading */}
+        <h2 className="text-4xl sm:text-4xl font-extrabold text-green-400 mb-8">
           Testimonials
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -33,11 +34,13 @@ const Testimonials = () => {
               className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition dark:bg-gray-200 dark:shadow-md dark:hover:shadow-lg"
             >
               <div className="h-24 flex items-center justify-center">
-                <p className="italic text-gray-300 dark:text-gray-700">
+                <p className="italic font-semibold text-sm sm:text-base text-gray-300 dark:text-gray-700">
                   {testimonial.feedback}
                 </p>
               </div>
-              <p className="mt-4 font-bold text-green-400">- {testimonial.name}</p>
+              <p className="mt-4 font-extrabold text-green-400 text-base sm:text-lg">
+                - {testimonial.name}
+              </p>
             </div>
           ))}
         </div>

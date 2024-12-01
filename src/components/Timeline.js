@@ -124,10 +124,10 @@ const Timeline = () => {
   return (
     <section
       id="timeline"
-      className="py-20 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 transition-colors duration-300"
+      className="py-20 bg-gray-900 text-white dark:bg-gray-100 dark:text-black transition-colors duration-300"
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-green-400 dark:text-green-600 mb-12 text-center">
+      <div className="max-w-7xl mx-auto px-4 text-center">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-green-400 mb-10">
           My Journey
         </h2>
         <div className="relative w-full">
@@ -154,7 +154,7 @@ const Timeline = () => {
                     : "lg:ml-auto lg:text-left bg-gray-800 dark:bg-white"
                 }`}
               >
-                <h3 className="text-2xl font-semibold text-green-400 dark:text-green-600 mb-2">
+                <h3 className="text-xl font-bold text-green-400 mb-2">
                   {item.title}
                 </h3>
                 <h4 className="text-lg text-gray-300 dark:text-gray-700 mb-2">

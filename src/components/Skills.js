@@ -29,7 +29,7 @@ const Skills = () => {
       className="py-20 bg-gradient-to-br from-gray-900 via-black to-purple-900 text-white dark:from-gray-100 dark:via-gray-300 dark:to-gray-200 dark:text-black"
     >
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-green-400 mb-10">Skills</h2>
+        <h2 className="text-5xl sm:text-3xl font-extrabold text-green-400 mb-8">Skills</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div
