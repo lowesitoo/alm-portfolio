@@ -117,6 +117,18 @@ const Navbar = () => {
                 Resume
               </RouterLink>
             </li>
+            {/* Theme Toggle for Mobile */}
+            <li>
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  setIsMenuOpen(false); // Close menu after toggling theme
+                }}
+                className="p-2 bg-green-400 text-gray-900 rounded-lg shadow-lg hover:bg-green-300 transition"
+              >
+                {isDarkMode ? "Light Mode" : "Dark Mode"}
+              </button>
+            </li>
           </ul>
         </div>
       )}

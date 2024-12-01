@@ -12,7 +12,7 @@ const Hero = () => {
       id="hero"
       className="relative h-screen bg-gradient-to-br from-gray-900 via-purple-800 to-black text-white dark:from-gray-100 dark:via-gray-300 dark:to-gray-200 dark:text-black flex flex-col justify-center items-center text-center px-6"
     >
-      {/* Particles.js Background */}
+      {/* Particles.js Container */}
       <div id="particles-js" className="absolute top-0 left-0 w-full h-full"></div>
 
       {/* Hero Content */}
@@ -27,8 +27,6 @@ const Hero = () => {
         <div className="space-x-4 flex flex-wrap justify-center gap-4">
           <a
             href="https://www.upwork.com/freelancers/~01b22dba180ca1c7fd"
-            target="_blank"
-            rel="noopener noreferrer"
             className="bg-green-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg hover:bg-green-300 transition"
           >
             See My Work

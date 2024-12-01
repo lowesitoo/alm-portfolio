@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import Timeline from "./components/Timeline";
 
+
 function App() {
   return (
     <Router>
