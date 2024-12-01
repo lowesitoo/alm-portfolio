@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Gradient Theme */
 .gradient-theme {
-  background: linear-gradient(135deg, #1e293b, #1f2937, #10b981, #065f46);
+  @apply bg-gradient-to-br from-gray-800 via-gray-700 to-emerald-600;
   background-size: 300% 300%;
   animation: gradientThemeBG 20s ease infinite;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+  .gradient-theme {
+    background-size: 200% 200%;
+    animation-duration: 30s; /* Slower for smoother animations on smaller screens */
+  }
 }
 
 @keyframes gradientThemeBG {
@@ -20,22 +29,18 @@
   }
 }
 
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Optional: Tailwind defaults cover this, but keep if needed */
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Replace with Tailwind's default font stack if preferred */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+code {
+  @apply font-mono;
+}

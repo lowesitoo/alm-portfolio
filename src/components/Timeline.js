@@ -124,15 +124,15 @@ const Timeline = () => {
   return (
     <section
       id="timeline"
-      className="py-20 bg-gradient-to-br from-gray-900 via-purple-800 to-black text-white dark:from-gray-100 dark:via-gray-300 dark:to-gray-200 dark:text-black"
+      className="py-20 bg-gradient-to-br from-gray-900 via-purple-800 to-black text-white"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-green-400 mb-12 text-center dark:text-gray-900">
+        <h2 className="text-4xl font-bold text-green-400 mb-12 text-center">
           My Journey
         </h2>
         <div className="relative w-full">
           {/* Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-green-400 dark:border-gray-700"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-green-400"></div>
 
           {timelineData.map((item, index) => (
             <div
@@ -142,7 +142,7 @@ const Timeline = () => {
               }`}
             >
               {/* Icon */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-green-400 text-gray-900 rounded-full flex items-center justify-center text-2xl border-4 border-gray-900 dark:bg-gray-700 dark:text-white z-10">
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-green-400 text-gray-900 rounded-full flex items-center justify-center text-2xl border-4 border-gray-900 z-10">
                 {item.icon}
               </div>
 
@@ -150,20 +150,20 @@ const Timeline = () => {
               <div
                 className={`shadow-lg rounded-lg p-6 max-w-lg ${
                   index % 2 === 0
-                    ? "mr-auto text-left bg-gray-800 text-white dark:bg-white dark:text-black"
-                    : "ml-auto text-left bg-gray-800 text-white dark:bg-white dark:text-black"
+                    ? "mr-auto text-left bg-gray-800"
+                    : "ml-auto text-left bg-gray-800"
                 }`}
               >
-                <h3 className="text-2xl font-semibold text-green-400 mb-2 dark:text-gray-900">
+                <h3 className="text-2xl font-semibold text-green-400 mb-2">
                   {item.title}
                 </h3>
-                <h4 className="text-lg text-gray-300 mb-2 dark:text-gray-700">
+                <h4 className="text-lg text-gray-300 mb-2">
                   {item.institution}
                 </h4>
-                <p className="text-sm text-gray-400 mb-4 dark:text-gray-600">
+                <p className="text-sm text-gray-400 mb-4">
                   {item.startDate} - {item.endDate}
                 </p>
-                <p className="text-gray-300 leading-relaxed dark:text-gray-700">
+                <p className="text-gray-300 leading-relaxed">
                   {item.description}
                 </p>
               </div>

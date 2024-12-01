@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // For mobile menu
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -21,14 +21,13 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleNavClick = (sectionId) => {
     if (location.pathname !== "/") {
-      navigate("/"); 
+      navigate("/");
       setTimeout(() => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
       }, 100);
@@ -44,54 +43,83 @@ const Navbar = () => {
       } transition-all duration-300 dark:bg-gray-700 dark:text-gray-200`}
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <button onClick={() => handleNavClick("hero")} className="cursor-pointer hover:text-green-400 text-white">
-        <h1 className="text-2xl sm:text-3xl font-bold text-green-400">ALM</h1> </button>
-        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <ul className="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+        {/* Logo */}
+        <h1
+          onClick={() => handleNavClick("hero")}
+          className="text-2xl sm:text-3xl font-bold text-green-400 cursor-pointer"
+        >
+          ALM
+        </h1>
+
+        {/* Desktop Menu */}
+        <ul className="hidden sm:flex items-center space-x-6 text-white ml-auto">
+          {["Home", "About", "Skills", "Certifications", "Testimonials", "Contact"].map(
+            (item) => (
+              <li key={item}>
+                <button
+                  onClick={() => handleNavClick(item.toLowerCase())}
+                  className="hover:text-green-400"
+                >
+                  {item}
+                </button>
+              </li>
+            )
+          )}
+          <li>
+            <RouterLink to="/resume" className="hover:text-green-400">
+              Resume
+            </RouterLink>
+          </li>
+          <li>
+            <button
+              onClick={toggleTheme}
+              className="p-2 bg-green-400 text-gray-900 rounded-lg shadow-lg hover:bg-green-300 transition"
+            >
+              {isDarkMode ? "Light Mode" : "Dark Mode"}
+            </button>
+          </li>
+        </ul>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="sm:hidden text-green-400 hover:text-green-300"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="sm:hidden bg-gray-800 text-white absolute top-full left-0 w-full shadow-lg">
+          <ul className="flex flex-col items-center space-y-4 py-4">
+            {["Home", "About", "Skills", "Certifications", "Testimonials", "Contact"].map(
+              (item) => (
+                <li key={item}>
+                  <button
+                    onClick={() => {
+                      handleNavClick(item.toLowerCase());
+                      setIsMenuOpen(false);
+                    }}
+                    className="hover:text-green-400"
+                  >
+                    {item}
+                  </button>
+                </li>
+              )
+            )}
             <li>
-              <button onClick={() => handleNavClick("hero")} className="cursor-pointer hover:text-green-400 text-white">
-                Home
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavClick("about")} className="cursor-pointer hover:text-green-400 text-white">
-                About
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavClick("skills")} className="cursor-pointer hover:text-green-400 text-white">
-                Skills
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavClick("certifications")} className="cursor-pointer hover:text-green-400 text-white">
-                Certifications
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavClick("testimonials")} className="cursor-pointer hover:text-green-400 text-white">
-                Testimonials
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavClick("contact")} className="cursor-pointer hover:text-green-400 text-white">
-                Contact
-              </button>
-            </li>
-            <li>
-              <RouterLink to="/resume" className="hover:text-green-400 text-white">
+              <RouterLink
+                to="/resume"
+                className="hover:text-green-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Resume
               </RouterLink>
             </li>
           </ul>
-          <button
-            onClick={toggleTheme}
-            className="p-2 bg-green-400 text-gray-900 rounded-lg shadow-lg hover:bg-green-300 transition"
-          >
-            {isDarkMode ? "Light Mode" : "Dark Mode"}
-          </button>
         </div>
-      </div>
+      )}
     </nav>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,8 +7,8 @@ import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
-import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 import Timeline from "./components/Timeline";
 
 function App() {
@@ -18,14 +17,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/alm-resume/"
+          path="/"
           element={
             <>
               <Hero />
               <About />
               <Skills />
-              <Timeline />
               <Certifications />
+              <Timeline />
               <Testimonials />
               <Contact />
               <Footer />
