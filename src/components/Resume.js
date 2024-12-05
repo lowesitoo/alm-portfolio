@@ -1,10 +1,6 @@
 const Resume = () => {
   return (
     <section className="min-h-screen bg-gray-900 text-white dark:bg-gray-200 dark:text-black flex flex-col justify-center items-center px-4">
-      {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6">
-        My Resume
-      </h2>
       {/* Responsive Iframe Container */}
       <div className="w-full sm:w-4/5 h-[60vh] sm:h-[75vh] border-2 border-gray-700 shadow-lg dark:border-gray-400 rounded-lg overflow-hidden">
         <iframe
