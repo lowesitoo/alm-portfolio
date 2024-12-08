@@ -7,6 +7,48 @@ import {
 
 const timelineData = [
   {
+    title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    institution: "Issued by Microsoft",
+    startDate: "December 2024",
+    endDate: "Present",
+    description: `
+Familiar with cloud computing concepts, including IaaS, PaaS, and SaaS, as well as core Azure services such as Virtual Machines, App Services, and Azure Storage. Gained insight into Azure networking and security frameworks like VNets and NSGs, along with cost management and monitoring tools such as Azure Pricing Calculator and Azure Monitor.    `,
+    icon: <FaCertificate />,
+  },
+  {
+    title: "CompTIA IT Operations Specialist Certification",
+    institution: "Issued by CompTIA",
+    startDate: "October 2024",
+    endDate: "October 2027",
+    description: `
+      This certification validates my expertise in IT infrastructure, networking, and operations.
+      I gained skills in security protocols, operational best practices, and troubleshooting hardware, software, and network issues.
+    `,
+    icon: <FaCertificate />,
+  },
+   {
+    title: "CompTIA Network+ Certification",
+    institution: "Issued by CompTIA",
+    startDate: "October 2024",
+    endDate: "October 2027",
+    description: `
+      I acquired proficiency in networking concepts, including TCP/IP, DNS, DHCP, and OSI models.
+      I am skilled in configuring and troubleshooting routers, switches, and wireless access points, while following best practices for network security.
+    `,
+    icon: <FaCertificate />,
+  },
+  {
+    title: "CompTIA A+ Certification",
+    institution: "Issued by CompTIA",
+    startDate: "July 2024",
+    endDate: "October 2027",
+    description: `
+      This certification equipped me with foundational IT skills, including hardware setup, troubleshooting, and operating system management (Windows, macOS, and Linux).
+      I also developed expertise in IT operational procedures and basic security practices.
+    `,
+    icon: <FaCertificate />,
+  },
+  {
     title: "IT Help Desk Technician",
     institution: "YMCA of the Rockies, Estes Park, CO",
     startDate: "April 2024",
@@ -28,39 +70,6 @@ const timelineData = [
       My role involves conducting detailed research on artists, albums, and movies, and resolving data-related issues using specialized tools for data quality checks.
     `,
     icon: <FaLaptopCode />,
-  },
-  {
-    title: "CompTIA IT Operations Specialist Certification",
-    institution: "Issued by CompTIA",
-    startDate: "October 2024",
-    endDate: "October 2027",
-    description: `
-      This certification validates my expertise in IT infrastructure, networking, and operations.
-      I gained skills in security protocols, operational best practices, and troubleshooting hardware, software, and network issues.
-    `,
-    icon: <FaCertificate />,
-  },
-  {
-    title: "CompTIA Network+ Certification",
-    institution: "Issued by CompTIA",
-    startDate: "October 2024",
-    endDate: "October 2027",
-    description: `
-      I acquired proficiency in networking concepts, including TCP/IP, DNS, DHCP, and OSI models.
-      I am skilled in configuring and troubleshooting routers, switches, and wireless access points, while following best practices for network security.
-    `,
-    icon: <FaCertificate />,
-  },
-  {
-    title: "CompTIA A+ Certification",
-    institution: "Issued by CompTIA",
-    startDate: "July 2024",
-    endDate: "October 2027",
-    description: `
-      This certification equipped me with foundational IT skills, including hardware setup, troubleshooting, and operating system management (Windows, macOS, and Linux).
-      I also developed expertise in IT operational procedures and basic security practices.
-    `,
-    icon: <FaCertificate />,
   },
   {
     title: "Mid-Level Customer Success Executive",

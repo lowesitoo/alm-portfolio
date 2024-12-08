@@ -14,6 +14,11 @@ const Certifications = () => {
       name: "CompTIA IT Operations Specialist",
       description: "Validated expertise in IT infrastructure and operations.",
     },
+    {
+      name: "Microsoft Azure Fundamentals (AZ-900)",
+      description:
+        "Proficiency in cloud concepts, Azure core services, networking, security, cost management, and Azure monitoring and compliance tools.",
+    },
   ];
 
   return (
