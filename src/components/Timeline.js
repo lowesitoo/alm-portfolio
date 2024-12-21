@@ -7,6 +7,15 @@ import {
 
 const timelineData = [
   {
+    title: "Microsoft Certified: Microsoft 365 Fundamentals (MS-900)",
+    institution: "Issued by Microsoft",
+    startDate: "December 2024",
+    endDate: "Present",
+    description: `
+Familiar with cloud computing principles, including deployment models and the benefits of scalability and reliability. Proficient in Microsoft 365 services such as Office 365 apps, Teams, SharePoint, and Exchange Online. Understanding of Microsoft 365 security, compliance frameworks, and licensing models to align with organizational needs.    `,
+    icon: <FaCertificate />,
+  },
+  {
     title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
     institution: "Issued by Microsoft",
     startDate: "December 2024",
@@ -64,7 +73,7 @@ Familiar with cloud computing concepts, including IaaS, PaaS, and SaaS, as well 
     title: "Music and Audiovisual Data Editor",
     institution: "BMAT Music Innovators, Barcelona, Spain",
     startDate: "July 2023",
-    endDate: "Present",
+    endDate: "December 2024",
     description: `
       I organize and maintain databases of music and audiovisual content, ensuring data accuracy and completeness.
       My role involves conducting detailed research on artists, albums, and movies, and resolving data-related issues using specialized tools for data quality checks.

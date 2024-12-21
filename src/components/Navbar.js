@@ -26,15 +26,21 @@ const Navbar = () => {
   }, []);
 
   const handleNavClick = (sectionId) => {
+    const mappedSectionId = sectionId === "home" ? "hero" : sectionId;
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById(mappedSectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById(mappedSectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
 
   return (
     <nav

@@ -19,6 +19,11 @@ const Certifications = () => {
       description:
         "Proficiency in cloud concepts, Azure core services, networking, security, cost management, and Azure monitoring and compliance tools.",
     },
+    {
+      name: "Microsoft 365 Fundamentals (MS-900)",
+      description:
+        "Understanding of Microsoft 365 services, including cloud concepts, Office 365 apps, security, compliance, and licensing models.",
+    },
   ];
 
   return (
@@ -38,7 +43,7 @@ const Certifications = () => {
           {certifications.map((certification, index) => (
             <div
               key={index}
-              className="bg-opacity-90 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition dark:bg-gray-200 dark:shadow-md dark:hover:shadow-lg"
+              className="bg-opacity-90 bg-gray-800 p-6 min-h-[200px] rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition dark:bg-gray-200 dark:shadow-md dark:hover:shadow-lg"
             >
               {/* Icon */}
               <div className="text-green-400 text-4xl mb-6">
@@ -54,6 +59,11 @@ const Certifications = () => {
               </p>
             </div>
           ))}
+          {/* Placeholder for Balance */}
+          {certifications.length % 3 !== 0 &&
+            Array.from({ length: 3 - (certifications.length % 3) }).map((_, i) => (
+              <div key={`placeholder-${i}`} className="invisible"></div>
+            ))}
         </div>
       </div>
     </section>
