@@ -43,7 +43,7 @@ const Certifications = () => {
           {certifications.map((certification, index) => (
             <div
               key={index}
-              className="bg-opacity-90 bg-gray-800 p-6 min-h-[200px] rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition dark:bg-gray-200 dark:shadow-md dark:hover:shadow-lg"
+              className="bg-opacity-90 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition dark:bg-gray-200 dark:shadow-md dark:hover:shadow-lg"
             >
               {/* Icon */}
               <div className="text-green-400 text-4xl mb-6">
@@ -59,11 +59,6 @@ const Certifications = () => {
               </p>
             </div>
           ))}
-          {/* Placeholder for Balance */}
-          {certifications.length % 3 !== 0 &&
-            Array.from({ length: 3 - (certifications.length % 3) }).map((_, i) => (
-              <div key={`placeholder-${i}`} className="invisible"></div>
-            ))}
         </div>
       </div>
     </section>
